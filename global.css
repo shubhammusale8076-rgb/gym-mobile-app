@@ -33,38 +33,57 @@
   --color-danger-bg: #fde2e2;
   --color-danger-text: #b42318;
 
-    --spacing-0: 0px;
-    --spacing-1: 4px;
-    --spacing-2: 8px;
-    --spacing-3: 12px;
-    --spacing-4: 16px;
-    --spacing-5: 20px;
-    --spacing-6: 24px;
-    --spacing-7: 28px;
-    --spacing-8: 32px;
-    --spacing-9: 36px;
-    --spacing-10: 40px;
-    --spacing-11: 44px;
-    --spacing-12: 48px;
-    --spacing-14: 56px;
-    --spacing-16: 64px;
-    --spacing-18: 72px;
-    --spacing-20: 80px;
-    --spacing-24: 96px;
-    --spacing-30: 120px;
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+  --spacing-11: 44px;
+  --spacing-12: 48px;
+  --spacing-14: 56px;
+  --spacing-16: 64px;
+  --spacing-18: 72px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-30: 120px;
 
-    --font-sans: sans-regular;
-    --font-sans-light: sans-light;
-    --font-sans-medium: sans-medium;
-    --font-sans-semibold: sans-semibold;
-    --font-sans-bold: sans-bold;
-    --font-sans-extrabold: sans-extrabold;
+  --font-sans: sans-regular;
+  --font-sans-light: sans-light;
+  --font-sans-medium: sans-medium;
+  --font-sans-semibold: sans-semibold;
+  --font-sans-bold: sans-bold;
+  --font-sans-extrabold: sans-extrabold;
 }
+
 @layer components {
+
+  .tabs-icon {
+    @apply size-12 items-center justify-center;
+  }
+
+  .tabs-pill {
+    @apply size-12 items-center justify-center rounded-full  ;
+  }
+
+  .tabs-active {
+    @apply bg-primary ;
+  }
+
+  .tabs-glyph {
+    @apply size-6  ;
+  }
+
 
   /* =========================
      SCREENS
   ========================= */
+
 
   .screen {
     @apply flex-1 bg-surface;
