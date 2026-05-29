@@ -4,12 +4,12 @@ import { SafeAreaView as RNSafeAreaView} from 'react-native-safe-area-context';
 
 const SafeAreaView = styled(RNSafeAreaView);
 
-const Payment = () => {
+const setting = () => {
   return (
     <SafeAreaView>
-      <Text>Payment</Text>
+      <Text>setting</Text>
     </SafeAreaView>
   )
 }
 
-export default Payment
+export default setting
