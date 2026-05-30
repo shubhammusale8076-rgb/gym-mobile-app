@@ -6,7 +6,7 @@ import { useEffect } from "react";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [fontLoaded] = useFonts({
+  const [fontLoaded, fontError] = useFonts({
     "sans-light": require("../assets/fonts/PlusJakartaSans-Light.ttf"),
     "sans-medium": require("../assets/fonts/PlusJakartaSans-Medium.ttf"),
     "sans-regular": require("../assets/fonts/PlusJakartaSans-Regular.ttf"),
@@ -18,13 +18,13 @@ export default function RootLayout() {
 
 
   useEffect(() => {
-    if (fontLoaded) {
+    if (fontLoaded || fontError) {
       SplashScreen.hideAsync();
     }
-  }, [fontLoaded]);
+  }, [fontLoaded,fontError]);
 
 
-  if (!fontLoaded) {
+if (!fontLoaded && !fontError) {
     return null;
   }
 

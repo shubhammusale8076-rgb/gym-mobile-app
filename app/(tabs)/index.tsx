@@ -70,7 +70,11 @@ export default function APP() {
     <View className="mt-8 card p-5">
       <View className="flex-row items-center justify-between mb-4">
         <Text className="text-xl font-sans-bold text-on-surface">Recent Payments</Text>
-        <TouchableOpacity accessibilityRole="link" accessibilityLabel="View all payments">
+        <TouchableOpacity
+          onPress={() => {/* navigate to payments */ }}
+          accessibilityRole="link"
+          accessibilityLabel="View all payments"
+        >
           <Text className="text-primary font-sans-bold text-sm">View All</Text>
         </TouchableOpacity>
       </View>

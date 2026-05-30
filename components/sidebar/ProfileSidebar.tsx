@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { 
   View, 
   Text, 
@@ -14,8 +14,6 @@ import Animated, {
   useSharedValue, 
   useAnimatedStyle, 
   withTiming, 
-  interpolate,
-  Extrapolate
 } from 'react-native-reanimated';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useAuth } from '@/hooks/useAuth';

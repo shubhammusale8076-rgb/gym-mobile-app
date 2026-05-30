@@ -65,12 +65,12 @@ const ForgotPassword = () => {
               Forgot Password
             </Text>
             <Text className="mt-2 text-base font-sans-medium text-on-surface-variant leading-6">
-              Enter your email address and we'll send password reset instructions.
+              Enter your email address and we &apos;ll send password reset instructions.
             </Text>
           </View>
 
           {isSuccess ? (
-            <View className="mt-10 bg-success-bg p-6 rounded-[32px] items-center">
+            <View className="mt-10 bg-success-bg p-6 rounded-4xl items-center">
               <View className="size-16 bg-white rounded-full items-center justify-center mb-4">
                 <Ionicons name="mail-unread-outline" size={32} color="#116b3a" />
               </View>

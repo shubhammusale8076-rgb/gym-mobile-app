@@ -4,7 +4,6 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  Image,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
@@ -51,7 +50,7 @@ const LogIn = () => {
 
         <ScrollView
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ flex: 1 }}
+           contentContainerStyle={{ flexGrow: 1 }}
         >
           {/* <View className="h-2/5 w-full">
             <Image
@@ -160,7 +159,7 @@ const LogIn = () => {
                 accessibilityLabel="Remember me"
               >
                 <View className={`size-5 rounded border ${rememberMe ? 'bg-primary border-primary' : 'border-on-surface-variant'} items-center justify-center`}>
-                  {rememberMe && <MaterialCommunityIcons name="checkbox-blank-outline" size={14} color="white" />}
+                  {rememberMe && <MaterialCommunityIcons name="check" size={14} color="white" />}
                 </View>
                 <Text className="ml-2 text-sm font-sans-medium text-on-surface-variant">
                   Remember me
