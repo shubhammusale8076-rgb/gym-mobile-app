@@ -49,8 +49,8 @@ export const icons = {
 
 export const TAB_ICONS: Record<string,TabIconConfig> = { 
     HOME: { 
-        active: "home", 
-        inactive: "home-outline", 
+        active: "view-dashboard", 
+        inactive: "view-dashboard-outline", 
     }, 
     MEMBERS: { 
         active: "account-multiple", 
