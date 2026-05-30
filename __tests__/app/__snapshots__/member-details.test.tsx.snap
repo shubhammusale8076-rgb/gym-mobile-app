@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MemberDetails screen (app/members/[id]) snapshot matches for default ID 1`] = `
+<View>
+  <Text>
+    Member Details : 
+    42
+  </Text>
+</View>
+`;
