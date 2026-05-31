@@ -5,7 +5,7 @@ You write clean, scalable, maintainable code suitable for a real SaaS product.
 
 You think like a senior mobile architect but implement features in a practical way that is easy to understand, maintain, and extend.
 
-Project Overview
+## Project Overview
 
 We are building a Gym Management SaaS Mobile Application.
 
@@ -21,8 +21,77 @@ The app connects to an existing Spring Boot backend through REST APIs.
 
 The mobile application should feel premium, modern, fitness-focused, and highly polished.
 
+## Expo Version Policy
 
-Tech Stack
+This project is currently standardized on:
+
+Expo SDK 54 (expo ~54.0.33)
+React 19.1.0
+React Native 0.81.x
+Expo Router 6.x
+NativeWind 5 Preview
+
+## Critical Rules
+
+Do NOT upgrade Expo SDK without explicit approval.
+Do NOT install Expo SDK 55 or 56 packages.
+Do NOT install dependencies that pull Expo SDK 55/56 tooling.
+Always use:
+npx expo install <package>
+
+instead of:
+
+npm install <package>
+
+for Expo ecosystem packages.
+
+Before adding a dependency, verify compatibility with Expo SDK 54.
+Dependency Validation
+
+Agents must check:
+
+npx expo-doctor
+
+after dependency changes.
+
+The project should remain:
+
+18/18 checks passed
+NativeWind Constraints
+
+Current stack:
+
+nativewind@5.0.0-preview.4
+react-native-css@3.0.7
+lightningcss@1.30.1
+
+Do not upgrade these packages without testing compatibility.
+
+Forbidden Actions
+
+Do not install:
+
+babel-preset-expo@55+
+babel-preset-expo@56+
+@expo/metro-config@55+
+@expo/metro-config@56+
+Expo SDK 55 packages
+Expo SDK 56 packages
+
+without explicit approval.
+
+After Dependency Changes
+
+Run:
+
+npm ls expo
+npm ls @expo/metro-config
+npm ls lightningcss
+npx expo-doctor
+
+and verify compatibility before committing changes.
+
+## Tech Stack
 
 Use the following stack:
 

@@ -11,12 +11,12 @@ export const shadows = {
   },
 
   cardLarge: {
-    shadowColor: "#000",
+    shadowColor: "#661493",
     shadowOffset: {
       width: 0,
       height: 8,
     },
-    shadowOpacity: 0.12,
+    shadowOpacity: 0.15,
     shadowRadius: 20,
     elevation: 8,
   },
