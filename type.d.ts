@@ -59,6 +59,22 @@ declare global {
         | "DUE"
         | "INACTIVE";
 
+    type MemberPayment = {
+        id: string;
+        date: string;
+        amount: number;
+        status: "PAID" | "PENDING" | "FAILED";
+        method: string;
+    };
+
+    type JourneyEvent = {
+        id: string;
+        date: string;
+        title: string;
+        description: string;
+        icon?: string;
+    };
+
     type Member = {
         id: string;
         name: string;
@@ -73,6 +89,25 @@ declare global {
         renewalDate: string;
         joinDate: string;
         phone: string;
+
+        // Extended fields for details screen
+        attendancePercentage?: number;
+        workoutCount?: number;
+        streak?: number;
+        membershipPlan?: string;
+        membershipPrice?: number;
+        gender?: "Male" | "Female" | "Other";
+        dob?: string;
+        emergencyContact?: string;
+        goal?: string;
+        weight?: number;
+        targetWeight?: number;
+        bodyFat?: number;
+        bmi?: number;
+        workoutCompletion?: number;
+        address?: string;
+        recentPayments?: MemberPayment[];
+        journey?: JourneyEvent[];
     };
 
     type MemberFilter =
@@ -82,7 +117,7 @@ declare global {
         | "INACTIVE";
 
     type MemberFilterOption = {
-        label: string;
+        label: string; 
         value: MemberFilter;
     };
 

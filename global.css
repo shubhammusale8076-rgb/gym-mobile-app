@@ -6,6 +6,7 @@
 
 @theme {
   --color-primary: #661493;
+  --color-primary-hover: #f6e6ff;
   --color-primary-container: #8034ad;
 
   /* SURFACES */
@@ -242,6 +243,5 @@
     @apply mt-1 mb-2 text-lg font-sans-medium;
   }
 
-  /* Shadow */
 }
 
