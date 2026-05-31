@@ -47,7 +47,7 @@ const MembersScreen = () => {
         No members found
       </Text>
       <Text className="mt-2 text-sm font-sans-medium text-on-surface-variant text-center leading-5">
-        Try adjusting your filters or search term to find what you&apos; re looking for.
+        Try adjusting your filters or search term to find what you&apos;re looking for.
       </Text>
 
       {(searchTerm !== '' || selectedFilter !== 'ALL') && (
@@ -67,7 +67,7 @@ const MembersScreen = () => {
   const renderItem = useCallback(({ item }: { item: Member }) => (
     <MemberCard
       member={item}
-      onPress={() => router.push({ pathname: '/member/[id]' as any, params: { id: item.id } })}
+      onPress={() => router.push(`/member/${item.id}`)}
     />
   ), [router]);
 

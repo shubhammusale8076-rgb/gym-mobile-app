@@ -159,7 +159,7 @@ const MemberDetails = () => {
                 </Text>
               </View>
               <View className="bg-primary px-4 py-2 rounded-xl">
-                <Text className="text-white font-sans-bold text-sm uppercase">ACTIVE</Text>
+                <Text className="text-white font-sans-bold text-sm uppercase">{member.status}</Text>
               </View>
             </View>
           </View>
@@ -176,7 +176,7 @@ const MemberDetails = () => {
                     <MaterialCommunityIcons 
                       name={(event.icon as any) || 'calendar'} 
                       size={18} 
-                      color={index === 0 ? 'white' : 'text-primary'} 
+                      color={index === 0 ? '#ffffff' : '#661493'} 
                     />
                   </View>
                   {index !== (member.journey?.length || 0) - 1 && (
@@ -207,8 +207,8 @@ const MemberDetails = () => {
                  <View>
                     <Text className="text-on-surface-variant text-[10px] font-sans-bold uppercase tracking-wider mb-2">WEIGHT GOAL</Text>
                     <View className="flex-row items-baseline">
-                       <Text className="text-4xl font-sans-bold text-primary">{member.weight}kg</Text>
-                       <Text className="text-on-surface-variant font-sans-medium ml-2">/ {member.targetWeight}kg</Text>
+                       <Text className="text-4xl font-sans-bold text-primary">{member.weight ?? '--'}kg</Text>
+                       <Text className="text-on-surface-variant font-sans-medium ml-2">/ {member.targetWeight ?? '--'}kg</Text>
                     </View>
                  </View>
                  <View className="items-end">
@@ -253,7 +253,7 @@ const MemberDetails = () => {
                     <MaterialCommunityIcons 
                       name={payment.method === 'UPI' ? 'lightning-bolt' : 'credit-card-outline'} 
                       size={24} 
-                      color="text-on-surface" 
+                      color="#ffffff" 
                     />
                   </View>
                   <View className="ml-4">

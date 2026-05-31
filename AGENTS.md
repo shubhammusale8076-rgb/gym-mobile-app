@@ -25,7 +25,7 @@ The mobile application should feel premium, modern, fitness-focused, and highly 
 
 This project is currently standardized on:
 
-Expo SDK 54 (expo ~54.0.35)
+Expo SDK 54 (expo ~54.0.33)
 React 19.1.0
 React Native 0.81.x
 Expo Router 6.x
